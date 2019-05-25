@@ -53,7 +53,7 @@ type test []*Track
 
 
 func main() {
-	sort.Sort((byArtist(tracks))
+	sort.Sort(byArtist(tracks))
 	printTracks(tracks)
 
 }

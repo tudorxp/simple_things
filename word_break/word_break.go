@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"bufio"
+	"strings"
 )
 
 func die_if_error(err error) {
@@ -62,6 +63,8 @@ func word_break(s []rune, dictionary map[string]bool) (bool, string) {
 			str+=words[i]+" "
 		}
 		// fmt.Println(str)
+		// chomp
+		str=strings.TrimSuffix(str," ")
 		return true, str
 	}
 	return false, ""

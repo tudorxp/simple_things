@@ -56,7 +56,8 @@ func population_count_table(n uint) (count uint) {
 	return
 }
 
-// Here is a constant time approach. It is by far the least readable, and requires a reference to an explanation: https://stackoverflow.com/a/15979139
+// Here is a constant time approach. It is by far the least readable, and requires a reference to an explanation such as this one from Hacker's Delight book: 
+// https://books.google.co.uk/books?id=iBNKMspIlqEC&pg=PA65&redir_esc=y&hl=en#v=onepage&q&f=false
 // NB: Go's standard library code in math/bits uses a similar approach for 64-bit OnesCount.
 func population_count_divideconquer(n uint) (count uint) {
 	i := uint32(n) - ((uint32(n) >> 1) & 0x55555555)

@@ -5,7 +5,7 @@ checking the least significant bit of the integer, then shifting right, and loop
 Having since done further research into the matter, I've implemented a number of alternative methods; 
 However I will still submit the original solution as the default, since 
 - I find it the most readable 
-- In the absence of performance requirements, I judge it "good enough" for the purpose - since our integers have less than 20 bits, it loops at most 20 times.
+- In the absence of performance requirements, I judge it "good enough" for the purpose - since our integers have less than 20 bits, it will only loop for fewer than 20 times.
 
 Here is a sample run, and a test/benchmark run of all methods as tested on my machine (have included some tests with larger integers & larger bit counts to emphasise the difference between approaches)
 
